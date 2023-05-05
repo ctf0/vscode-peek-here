@@ -4,4 +4,4 @@ open a peek panel at current line, kinda like having a picture in picture inside
 
 ## Notes
 
-recommended to set `"editor.stablePeek": true,` to avoid closing the peek while you're doing your changes.
+recommended to set `"editor.stablePeek": true,` to avoid closing the peek if u want to make any changes.
