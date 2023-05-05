@@ -40,11 +40,17 @@ export async function activate(context: vscode.ExtensionContext) {
     );
 }
 
-function getLocations(editor) {
+function getLocations(editor: vscode.TextEditor) {
     const { selections, document } = editor;
     const uri = document.uri;
 
-    return selections.map((item: vscode.Selection) => new vscode.Location(uri, document.lineAt(item.start.line).range));
+    return selections.map((item: vscode.Selection) => {
+        const range = item.isEmpty
+            ? document.lineAt(item.start.line).range
+            : item;
+
+        return new vscode.Location(uri, range);
+    });
 }
 
 function setContext(val, key = 'hasPeekList') {

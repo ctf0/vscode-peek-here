@@ -2,7 +2,7 @@
     "name": "peek-here",
     "displayName": "Peek Here",
     "description": "open peek panel at current line",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "ctf0",
     "author": "ctf0",
     "repository": "https://github.com/ctf0/vscode-peek-here",
