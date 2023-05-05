@@ -7,3 +7,7 @@
 ## 0.0.2
 
 - support multi cursor
+
+## 0.0.4
+
+- add support to save locations across editors
