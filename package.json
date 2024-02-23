@@ -2,7 +2,7 @@
     "name": "peek-here",
     "displayName": "Peek Here",
     "description": "open peek panel at current line",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "ctf0",
     "author": "ctf0",
     "repository": "https://github.com/ctf0/vscode-peek-here",
@@ -20,17 +20,17 @@
         "commands": [
             {
                 "title": "Current",
-                "category": "Peek",
+                "category": "Peek Here",
                 "command": "peek.current"
             },
             {
                 "title": "Save Line",
-                "category": "Peek",
+                "category": "Peek Here",
                 "command": "peek.addLocations"
             },
             {
                 "title": "Clear Saved Line",
-                "category": "Peek",
+                "category": "Peek Here",
                 "command": "peek.clearLocations"
             }
         ],
@@ -38,7 +38,7 @@
             "commandPalette": [
                 {
                     "command": "peek.current",
-                    "when": "editorFocus || editorIsOpen && !editorReadonly"
+                    "when": "editorFocus && hasPeekList || editorIsOpen && !editorReadonly && hasPeekList"
                 },
                 {
                     "command": "peek.addLocations",

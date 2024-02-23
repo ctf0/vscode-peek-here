@@ -15,3 +15,9 @@
 ## 0.0.5
 
 - include selection original range if something is selected
+
+## 0.0.6
+
+- fix showing commands when it should not
+- add example to readme
+- update the commands prefix to separate from the internal peek commands

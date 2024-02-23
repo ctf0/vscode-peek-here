@@ -11,7 +11,7 @@ export async function activate(context: vscode.ExtensionContext) {
         vscode.commands.registerCommand(`${CMND}.current`, async () => {
             const editor = vscode.window.activeTextEditor;
 
-            if (editor) {
+            if (editor && locationsList.length) {
                 const { selection, document } = editor;
                 const uri = document.uri;
 
@@ -34,8 +34,8 @@ export async function activate(context: vscode.ExtensionContext) {
             }
         }),
         vscode.commands.registerCommand(`${CMND}.clearLocations`, async () => {
-            locationsList = [];
             await setContext(false);
+            locationsList = [];
         }),
     );
 }
