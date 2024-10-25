@@ -2,12 +2,12 @@
     "name": "peek-here",
     "displayName": "Peek Here",
     "description": "open peek panel at current line",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "ctf0",
     "author": "ctf0",
     "repository": "https://github.com/ctf0/vscode-peek-here",
     "engines": {
-        "vscode": "^1.68.0"
+        "vscode": "^1.85.0"
     },
     "categories": [
         "Other"
@@ -59,9 +59,9 @@
         "watch": "npm run esbuild"
     },
     "devDependencies": {
-        "@types/node": "^18.16.3",
-        "@types/vscode": "^1.68.0",
-        "esbuild": "^0.17.18",
-        "typescript": "^5.0.4"
+        "@types/node": "^22.7.9",
+        "@types/vscode": "^1.85.0",
+        "esbuild": "^0.24.0",
+        "typescript": "^5.6.3"
     }
 }
